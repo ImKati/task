@@ -1,0 +1,29 @@
+.float_right {
+    float: right;
+}
+
+#sign-in{
+    text-align: center;
+    display: none;
+    width: 300px;
+    top: 40%;
+    margin: auto;
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.but{
+    width: 100%;
+}
+
+.input_form {
+    width: 100%;
+}
