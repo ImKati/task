@@ -1,5 +1,5 @@
 
-    var a = [
+    let a = [
         {name_eng:"Guinea-Bissau", name_rus:"Гвинея-Биссау", iso_code:"GNB"},
         {name_eng:"Germany", name_rus:"Германия", iso_code:"DEU"},
         {name_eng:"Gibraltar",   name_rus:"Гибралтар", iso_code:"GIB"},
@@ -15,9 +15,9 @@
     ]
 
     function Insert_Data() {
-        var table = document.getElementById("datas");
+        let table = document.getElementById("datas");
         table.innerHTML="";
-        var tr="";
+        let tr="";
         a.forEach(x=>{
            tr+='<tr>';
            tr+='<td>'+x.name_eng+'</td>'+'<td>'+x.name_rus+'</td>'+'<td>'+x.iso_code+'</td>';
@@ -35,11 +35,11 @@
     }
 
     function checkform() {
-        var name_eng = document.getElementById ('name_eng').value
-        var name_rus = document.getElementById ('name_rus').value
-        var iso_code = document.getElementById ('iso_code').value
+        let name_eng = document.getElementById ('name_eng').value
+        let name_rus = document.getElementById ('name_rus').value
+        let iso_code = document.getElementById ('iso_code').value
 
-        var errors = '';
+        let errors = '';
 
         if(name_eng == '') {
           errors+='<span>ошибка ввода name_eng</span><br>';
@@ -56,7 +56,7 @@
         if(errors == '') {
           document.getElementById ('error_divss').innerHTML = '';
 
-          var table = document.getElementById("datas");
+          let table = document.getElementById("datas");
           tr='<td>'+name_eng+'</td>'+'<td>'+name_rus+'</td>'+'<td>'+iso_code+'</td>';
           tr+='</tr>';
           table.innerHTML+=tr;
@@ -67,7 +67,7 @@
     }
 
     function isErorr() {
-      var str = document.getElementById("erorr").value;
+      let str = document.getElementById("erorr").value;
     }
 
     function isErorr(str){
